@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body style="background-color: bisque">
+  <h1>Registration Form</h1>
+  <form action="/process" method="post">
+    <label> First Name* </label>
+    <input
+      type="text"
+      placeholder="Enter your first name"
+      name="First name"
+    /><br />
+    <label> Last Name* </label>
+    <input
+      type="text"
+      placeholder="Enter your last name"
+      name="Last Name"
+    /><br />
+    <label> Email addriss* </label>
+    <input
+      type="email"
+      placeholder="Enter your email"
+      name="Email addriss"
+    /><br />
+    <label> Password* </label>
+    <input
+      type="password"
+      placeholder="Enter your password"
+      name="Password"
+    /><br />
+    <label> Confirm Password* </label>
+    <input
+      type="password"
+      placeholder="Enter your password again"
+      name="Confirm Password"
+    /><br />
+    <label> Birth Day </label>
+    <input type="date" name="Birthday" /><br />
+
+    <label>Gender</label>
+    <input type="radio" name="Gender" value="Male" id="Male" />
+    <label for="Male">Male</label>
+    <input type="radio" name="Gender" value="Female" id="Female" />
+    <label for="Female">Female</label>
+    <input type="radio" name="Gender" value="Non-binary" id="Non-binary" />
+    <label for="Non-binary">Non-binary</label>
+
+    <input
+      type="radio"
+      name="Gender"
+      value="i prefer not to answer"
+      id="i prefer not to answer"
+    />
+    <label for="i prefer not to answer">i prefer not to answer</label><br />
+    <p>A short descriptipn about myself:</p>
+    <textarea name="About me" cols="20" rows="3"></textarea><br />
+
+    <p>favirot languge</p>
+    <select name="favirot languge">
+      <option>JavaScript</option>
+      <option>php</option>
+      <option>css</option>
+    </select> <br>
+    
+      <input type="checkbox" name="Agree" id="Agree" checked />
+      <label for="Agree"> Yes, i would like to recive emails </label>
+    </div>
+    <br>
+    <input type="submit" value="Creat Account" />
+  </form>
+</body>
